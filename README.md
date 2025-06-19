@@ -124,7 +124,6 @@ distributed-dfs/
 
 ## 🧹 Tips
 
-- Keep terminals open while servers are running.  
 - Use the GUI's "Stop All Servers" button to cleanly terminate Flask servers.  
 - Logs and actions are updated in real time in the log window.  
 
