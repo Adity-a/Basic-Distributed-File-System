@@ -1,0 +1,19 @@
+{
+  "[1].pdf": {
+    "replicas": [
+      "node1",
+      "node2"
+    ],
+    "version": 2
+  },
+  "san-ground-truth.zip": {
+    "blocks": 10,
+    "replicas": [
+      "node1",
+      "node2",
+      "node3",
+      "node4"
+    ],
+    "version": 2
+  }
+}
