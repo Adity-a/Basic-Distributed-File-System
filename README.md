@@ -15,24 +15,22 @@ This project is a **basic Distributed File System prototype** designed for acade
 
 <table>
   <tr>
-    <td><img src="images/gui_main.png" width="320"/></td>
-    <td><img src="images/gui_upload.png" width="320"/></td>
+    <td><img src="images/main.png" width="320"/></td>
+    <td><img src="images/upload.png" width="320"/></td>
   </tr>
   <tr>
     <td align="center">Main Dashboard</td>
     <td align="center">Upload File Panel</td>
   </tr>
   <tr>
-    <td><img src="images/gui_nodeview.png" width="320"/></td>
-    <td><img src="images/gui_logs.png" width="320"/></td>
+    <td><img src="images/nodeview.png" width="320"/></td>
+    <td><img src="images/logs.png" width="320"/></td>
   </tr>
   <tr>
     <td align="center">Node File Viewer</td>
     <td align="center">Log Output</td>
   </tr>
 </table>
-
-> 💡 Replace the `images/*.png` with actual screenshots from your project
 
 ---
 
@@ -54,22 +52,7 @@ tk
 
 ---
 
-### 2. Start Node Servers (in 4 separate terminals)
-
-Each node runs a Flask server locally:
-
-```bash
-python node_server.py node1 5001
-python node_server.py node2 5002
-python node_server.py node3 5003
-python node_server.py node4 5004
-```
-
-> 🗂 These will create storage folders in `node_storage/` for each node
-
----
-
-### 3. Launch the GUI Client
+### 2. Launch the GUI Client
 
 ```bash
 python client_gui.py
@@ -82,6 +65,21 @@ Use the GUI to:
 - Download files (reassemble blocks)  
 - View/delete node files  
 - Monitor activity logs  
+
+---
+
+### 3. Start Node Servers (from GUI)
+
+Each node runs a Flask server locally:
+
+```bash
+python node_server.py node1 5001
+python node_server.py node2 5002
+python node_server.py node3 5003
+python node_server.py node4 5004
+```
+
+> 🗂 These will create storage folders in `node_storage/` for each node
 
 ---
 
@@ -122,18 +120,6 @@ distributed-dfs/
   "replication_factor": 4
 }
 ```
-
----
-
-## 🌐 Optional: Streamlit Web GUI
-
-You can also run this DFS using a **Streamlit-based Web GUI**:
-
-```bash
-streamlit run app.py
-```
-
-> Optionally deploy it using [Streamlit Cloud](https://streamlit.io/cloud)
 
 ---
 
