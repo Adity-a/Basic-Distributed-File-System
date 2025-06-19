@@ -7,7 +7,6 @@ This project is a **basic Distributed File System prototype** designed for acade
 - ✅ Full File Replication Across 4 Nodes  
 - ✅ Version-based Consistency  
 - ✅ User-Friendly GUI (Tkinter)  
-- ✅ Flask-Based Node Servers  
 
 ---
 
